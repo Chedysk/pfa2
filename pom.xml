@@ -46,5 +46,11 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<distributionManagement>
+	  <repository>
+	    <id>deploymentRep</id>
+	    <url>http://:192.168.33.10:8081/repository/deploymentRep/</url>
+	  </repository>
+	</distributionManagement>
 </project>
+
