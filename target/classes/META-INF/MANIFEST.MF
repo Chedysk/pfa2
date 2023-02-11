@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Built-By: lenovo
 Build-Jdk: 17.0.1
 Implementation-Title: ExamThourayaS2
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Version: 0.0.1
 Implementation-Vendor-Id: tn.esprit
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
  -starter-parent/ExamThourayaS2
