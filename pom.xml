@@ -48,8 +48,8 @@
 	</build>
 	<distributionManagement>
 	  <repository>
-	    <id>deploymentRep</id>
-	    <url>http://:192.168.1.21:8081/repository/deploymentRep/</url>
+	    <id>maven-releases</id>
+	    <url>http://192.168.1.21:8081/repository/maven-releases/</url>
 	  </repository>
 	</distributionManagement>
 </project>
