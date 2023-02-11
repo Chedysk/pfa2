@@ -41,6 +41,11 @@ pipeline {
                nexusArtifactUploader artifacts: [[artifactId: 'ExamThourayaS2', classifier: '', file: 'target/ExamThourayaS2-0.0.1.jar', type: 'jar']], credentialsId: 'nexus', groupId: 'tn.esprit', nexusUrl: '192.168.1.21:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-releases', version: '0.0.1'
             }
         }
+         stage('Docker image'){
+            steps {
+                 sh 'docker build -t chedysk/springapp .'
+            }
+        }
             
             
         }
