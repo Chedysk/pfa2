@@ -43,14 +43,14 @@ pipeline {
         }
          stage('Docker image'){
             steps {
-                 sh 'docker build -t Chedysk/springapp .'
+                 sh 'docker build -t chedysk/springapp .'
             }
         }
            stage('push to DockerHub'){
             steps { 
 		   withCredentials([string(credentialsId: 'dockerHub1-id', variable: 'dockerhubpwd')]) {
                     sh 'docker login -u Chedysk -p ${dockerhubpwd}'
-                    sh 'docker push Chedysk/springapp'
+                    sh 'docker push chedysk/springapp'
                     
                 }
        }
