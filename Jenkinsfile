@@ -5,7 +5,7 @@ pipeline {
         stage('checkout github repositoy') {
             steps {
                 echo 'pulling';
-                git branch:'main',url : 'https://github.com/Chedysk/pfa2.git';
+                git branch:'chedy',url : 'https://github.com/Chedysk/pfa2.git';
             }
         }
          stage("Build") {
