@@ -44,7 +44,7 @@ pipeline {
                  type: 'jar']],
                   credentialsId: 'nexus',
                    groupId: 'tn.esprit',
-                    nexusUrl: '192.168.1.21:8081',
+                    nexusUrl: '192.168.0.5:8081',
                      nexusVersion: 'nexus3', 
                      protocol: 'http',
                       repository: 'maven-releases',
