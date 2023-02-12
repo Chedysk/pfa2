@@ -56,16 +56,6 @@ pipeline {
                  sh 'docker build -t chedysk/springapp .'
             }
         }
-        
-         stage('DockerCompose') {
-        
-                       steps {
-                            
-				            sh 'docker-compose up -d'
-                        }
-                          
-        }   
-            
            stage('push to DockerHub'){
             steps { 
 		   withCredentials([string(credentialsId: 'dockerHub1-id', variable: 'dockerhubpwd')]) {
@@ -75,7 +65,15 @@ pipeline {
                 }
        }
        }   
-       
+        stage('DockerCompose') {
+        
+                       steps {
+                            
+				            sh 'docker-compose up -d'
+                        }
+                          
+        }   
+            
         }
         
     }
