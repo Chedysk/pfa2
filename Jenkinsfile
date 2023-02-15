@@ -5,7 +5,7 @@ pipeline {
         stage('checkout github repositoy') {
             steps {
                 echo 'pulling';
-                git branch:'chedy',url : 'https://github.com/Chedysk/pfa2.git';
+                git branch:'devops',url : 'https://github.com/Chedysk/pfa2.git';
             }
         }
          stage("Build") {
@@ -53,14 +53,14 @@ pipeline {
         }
          stage('Docker image'){
             steps {
-                 sh 'docker build -t chedysk/springapp .'
+                 sh 'docker build -t rihabhn/springapp .'
             }
         }
            stage('push to DockerHub'){
             steps { 
 		   withCredentials([string(credentialsId: 'dockerhubdevv', variable: 'dockerhubpwdd')]) {
                     sh 'docker login -u rihabhn -p ${dockerhubpwdd}'
-                    sh 'docker push chedysk/springapp'
+                    sh 'docker push rihabhn/springapp'
                     
                 }
        }
