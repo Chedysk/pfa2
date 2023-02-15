@@ -58,7 +58,7 @@ pipeline {
         }
            stage('push to DockerHub'){
             steps { 
-		   withCredentials([string(credentialsId: 'dockerHub1-id', variable: 'dockerhubpwd')]) {
+		   withCredentials([string(credentialsId: 'dockerHub1-id', variable: 'dockerhubpwdd')]) {
                     sh 'docker login -u rihabhn -p ${dockerhubpwd}'
                     sh 'docker push chedysk/springapp'
                     
