@@ -10,7 +10,7 @@ services:
   volumes:
     - /home/mysqldata:/var/lib/mysql
  spring_app:
-  image: chedysk/springapp
+  image: rihabhn/springapp
   container_name: spring1
   restart: on-failure
   ports:
