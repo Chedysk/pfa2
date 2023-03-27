@@ -5,7 +5,7 @@ pipeline {
         stage('checkout github repositoy') {
             steps {
                 echo 'pulling';
-                git branch:'chedy',url : 'https://github.com/Chedysk/pfa2.git';
+                git branch:'sakly',url : 'https://github.com/Chedysk/pfa2.git';
             }
         }
          stage("Build") {
@@ -44,7 +44,7 @@ pipeline {
                  type: 'jar']],
                   credentialsId: 'nexus',
                    groupId: 'tn.esprit',
-                    nexusUrl: '10.110.40.110:8081',
+                    nexusUrl: '192.168.1.3:8081',
                      nexusVersion: 'nexus3', 
                      protocol: 'http',
                       repository: 'maven-releases',
