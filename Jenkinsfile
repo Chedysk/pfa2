@@ -20,7 +20,8 @@ pipeline {
             parallel {
                   stage('Unit test ') {
             steps {
-               
+		
+                sh'echo "******** Junit/Mockito test is proceeding .......****"'
                 sh 'mvn  test'
             }
 		post {
