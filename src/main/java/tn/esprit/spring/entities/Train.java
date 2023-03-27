@@ -40,7 +40,13 @@ public class Train implements Serializable {
         this.idTrain = idTrain;
     }
 
-    public etatTrain getEtat() {
+    @Override
+	public String toString() {
+		return "Train [idTrain=" + idTrain + ", codeTrain=" + codeTrain + ", etat=" + etat + ", nbPlaceLibre="
+				+ nbPlaceLibre + "]";
+	}
+
+	public etatTrain getEtat() {
         return etat;
     }
 
