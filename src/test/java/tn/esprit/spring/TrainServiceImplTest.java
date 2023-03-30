@@ -4,7 +4,7 @@ package tn.esprit.spring;
 //import org.springframework.boot.test.context.SpringBootTest;
 //
 //@SpringBootTest
-//class ExamThourayaS2ApplicationTests {
+//class ExamThourayaS2ApplicationTests {a
 //
 //	@Test
 //	void contextLoads() {
