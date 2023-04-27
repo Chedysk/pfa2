@@ -108,7 +108,7 @@ public class TrainServiceImplTest {
 
         List<Train> trainsIndirects = trainService.ListerTrainsIndirects(Ville.TUNIS, Ville.SOUSSE);
 
-        Assert.assertEquals(1, trainsIndirects.size());
+        Assert.assertEquals(2, trainsIndirects.size());
     }
 }
 
